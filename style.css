@@ -36,6 +36,12 @@ float: left;
     text-align:center;
     margin-top:-10px;
 }
+#bstop{
+    font-size: 18px;
+    text-align:center;
+    margin-top:-10px;
+}
+
 canvas{
     border-style: dotted;
     border-color: white;
