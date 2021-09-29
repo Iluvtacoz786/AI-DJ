@@ -19,6 +19,14 @@ function modelLoaded(){
 }
 function draw(){
     image(video,0,0,600,500)
+    fill("red")
+    circle(leftWristX,leftWristY,30)
+    circle(rightWristX,rightWristY,30)
+    number_leftWristY=Number(leftWristY)
+    round_leftWristY=floor(number_leftWristY);
+    volume=round_leftWristY/500;
+    document.getElementById("volume").innerHTML=volume;
+    song.setVolume(volume);
 }
 
 function stop(){
@@ -41,9 +49,5 @@ function gotPoses(result){
         console.log(leftWristY);
         console.log(rightWristX);
         console.log(rightWristY);
-
-
-
-
     }
 }
